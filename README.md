@@ -2,6 +2,9 @@
 
 A professional Jupyter Notebook project for image processing with **Pillow** and **matplotlib**.
 
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 ## Overview
 
 This repository demonstrates a complete image processing workflow using Jupyter Notebooks:
@@ -21,7 +24,7 @@ This repository demonstrates a complete image processing workflow using Jupyter 
 ## Requirements
 
 ```bash
-pip install pillow matplotlib numpy jupyter nbformat
+pip install -r requirements.txt
 ```
 
 ## Project Structure
@@ -37,7 +40,10 @@ Jupiter-Notebook/
 │   ├── sample_resized.png        # Resized image
 │   └── sample_rotated.png        # Rotated image
 ├── scripts/
-│   └── run_output.py             # Standalone script to generate outputs
+│   ├── run_output.py             # Standalone script to generate outputs
+│   └── generate_notebook.py      # Notebook builder utility
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
